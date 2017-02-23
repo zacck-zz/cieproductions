@@ -1,0 +1,11 @@
+CACHE MANIFEST
+#ver:2/23/2017, 10:40:51 AM
+#plugin:4.6.1
+
+CACHE:
+/app.952d4cc14085.min.js
+/vendor.952d4cc14085.min.js
+/vendor.952d4cc14085.min.js.gz
+
+NETWORK:
+*

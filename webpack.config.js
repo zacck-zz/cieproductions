@@ -7,19 +7,19 @@ var OfflinePlugin = require('offline-plugin');
 
 //define enviroments
 var PRODUCTION = process.env.NODE_ENV === 'production';
-var DEVELOPMET = process.env.NODE_ENV === 'development';
+var DEVELOPMENT = process.env.NODE_ENV === 'development';
 var TEST = process.env.NODE_ENV = 'test';
 
-// set enviroment
-try{
-  if(DEVELOPMENT || TEST) {
-      envFile(path.join(__dirname, 'config/'+process.env.NODE_ENV + '.env'));
-  } else {
-    console.log('on server no need for env file')
-  }
-} catch(e) {
-  console.log(e);
-}
+// // set enviroment
+// try{
+//   if(DEVELOPMENT || TEST) {
+//       envFile(path.join(__dirname, 'config/'+process.env.NODE_ENV + '.env'));
+//   } else {
+//     console.log('on server no need for env file')
+//   }
+// } catch(e) {
+//   console.log(e);
+// }
 
 
 //separate production and dev entries
@@ -39,8 +39,8 @@ var entry = PRODUCTION
                 'webpack',
 
             ]
-          },
-          [
+          }
+    :     [
             './app.jsx'
           ];
 
@@ -76,11 +76,11 @@ var plugins = PRODUCTION
           })
         ];
 
-plugins.push({
+plugins.push(
   new webpack.DefinePlugin({
     NODE_ENV: JSON.stringify(process.env.NODE_ENV),
   })
-});
+);
 
 var buildModule = PRODUCTION || TEST
     ?             {
@@ -92,7 +92,7 @@ var buildModule = PRODUCTION || TEST
                           loader: 'babel-loader',
                           options: { presets: ['react', 'es2015', 'stage-0']}
                         }],
-                        exclude/(node_modules)/
+                        exclude: /(node_modules)/
                       }
                     ]
                   }
@@ -106,12 +106,12 @@ var buildModule = PRODUCTION || TEST
                           loader: 'babel-loader',
                           options: { presets: ['react', 'es2015', 'stage-0', 'react-hmre']}
                         }],
-                        exclude/(node_modules)/
+                        exclude: /(node_modules)/
                       }
                     ]
                   }
 module.exports =  {
-  context: __dirname + 'src',
+  context: __dirname + '/src',
   entry: entry,
   plugins: plugins,
   output: {
@@ -119,6 +119,7 @@ module.exports =  {
     filename: PRODUCTION ? '[name].[hash:12].min.js' : '[name].bundle.js',
     path:__dirname + '/public'
   },
+  module: buildModule,
   devServer: {
     contentBase: './public',
     inline: true,
