@@ -11,7 +11,7 @@
     "dev": "NODE_ENV=development webpack-dev-server --hot",
     "build": "webpack",
     "start": "node server.js",
-    "postinstall": "NODE_ENV=production npm rebuild node-sass && npm run build"
+    "postinstall": "NODE_ENV=production npm rebuild node-sass && webpack"
   },
   "author": "Zacck Osiemo",
   "license": "MIT",
