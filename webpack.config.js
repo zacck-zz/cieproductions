@@ -89,6 +89,18 @@ var plugins = PRODUCTION
 plugins.push(
   new webpack.DefinePlugin({
     NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+  }),
+  new webpack.LoaderOptionsPlugin({
+      minimize:true,
+      debug: false,
+      test: /\.scss$/,
+      options: {
+        sassLoader: {
+          includePaths: [
+            path.resolve(__dirname, './node_modules/foundation-sites/scss')
+          ]
+        }
+      }
   })
 );
 
