@@ -146,6 +146,7 @@ var buildModule = PRODUCTION || TEST
                     ]
                   }
 module.exports =  {
+  node:{fs:'empty'},
   context: __dirname + '/src',
   entry: entry,
   plugins: plugins,
