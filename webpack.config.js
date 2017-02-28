@@ -142,7 +142,7 @@ var buildModule = PRODUCTION || TEST
 
                       },
                       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
-                      {test:  /\.json$/, use'json-loader'}
+                      {test:  /\.json$/, use:'json-loader'}
                     ]
                   }
 module.exports =  {
