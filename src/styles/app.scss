@@ -9,6 +9,8 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 
+@import "components/landingpage";
+
 body {
   letter-spacing: .1rem;
 }
