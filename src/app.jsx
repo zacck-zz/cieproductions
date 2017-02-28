@@ -27,7 +27,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 injectTapEventPlugin();
-const cietheme = getMuiTheme({
+const cieTheme = getMuiTheme({
   palette: {
     primary1Color: "#f9d57e",
   },

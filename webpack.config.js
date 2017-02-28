@@ -102,6 +102,11 @@ var buildModule = PRODUCTION || TEST
                           options: { presets: ['react', 'es2015', 'stage-0']}
                         }],
                         exclude: /(node_modules)/
+                      },
+                      {
+                          test: /\.scss$/,
+                          use:['style-loader','css-loader','sass-loader']
+
                       }
                     ]
                   }
@@ -116,6 +121,11 @@ var buildModule = PRODUCTION || TEST
                           options: { presets: ['react', 'es2015', 'stage-0', 'react-hmre']}
                         }],
                         exclude: /(node_modules)/
+                      },
+                      {
+                          test: /\.scss$/,
+                          use:['style-loader','css-loader','sass-loader']
+
                       }
                     ]
                   }
