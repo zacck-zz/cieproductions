@@ -30,7 +30,6 @@ injectTapEventPlugin();
 const cieTheme = getMuiTheme({
   palette: {
     primary1Color: "#f9d57e",
-    textColor: "#000000"
   },
   appBar: {
     height: 50,
