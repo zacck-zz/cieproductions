@@ -28,20 +28,29 @@ var entry = PRODUCTION
             app: ['./app.jsx'],
             vendor:
             [
+                'script-loader!jquery/dist/jquery.min.js',
+                'script-loader!foundation-sites/dist/foundation.min.js',
                 'react',
                 'react-dom',
                 'firebase',
                 'redux',
                 'react-redux',
-                'react-route',
+                'react-router',
                 'html-webpack-plugin',
                 'compression-webpack-plugin',
                 'webpack',
+                'css-loader',
+                'sass-loader',
+                'node-sass',
+                'script-loader',
+                'react-tap-event-plugin'
 
             ]
           }
     :     [
-            './app.jsx'
+            './app.jsx',
+            'script-loader!jquery/dist/jquery.min.js',
+            'script-loader!foundation-sites/dist/foundation.min.js',
           ];
 
 var plugins = PRODUCTION
