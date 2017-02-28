@@ -141,7 +141,8 @@ var buildModule = PRODUCTION || TEST
                           use:['style-loader','css-loader','sass-loader']
 
                       },
-                      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+                      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
+                      {test:  /\.json$/, use'json-loader'}
                     ]
                   }
 module.exports =  {
