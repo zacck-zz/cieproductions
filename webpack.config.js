@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var envFile = require('node-env-file');
+//var envFile = require('node-env-file');
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
 var OfflinePlugin = require('offline-plugin');
