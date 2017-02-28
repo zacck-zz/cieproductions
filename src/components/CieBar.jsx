@@ -10,7 +10,7 @@ const styles = {
   logo: {
     borderRadius: '50%',
     height: '3rem',
-    width: '3rem',
+    width: '3rem'
   }
 }
 
@@ -20,8 +20,7 @@ export class CieBar extends Component {
   render() {
     return(
       <AppBar
-        showMenuIconButton={false}
-        iconElementLeft={<img style={styles.logo}/>}
+        iconElementLeft={<img style={styles.logo} src={require('../assets/bar_logo.png')}/>}
         iconElementRight = {<IconMenu
                       iconButtonElement= {
                           <IconButton><Menu/></IconButton>

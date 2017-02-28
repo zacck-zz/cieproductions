@@ -43,8 +43,9 @@ var entry = PRODUCTION
                 'sass-loader',
                 'node-sass',
                 'script-loader',
-                'react-tap-event-plugin'
-
+                'react-tap-event-plugin',
+                'style-loader',
+                'url-loader'
             ]
           }
     :     [
@@ -107,7 +108,8 @@ var buildModule = PRODUCTION || TEST
                           test: /\.scss$/,
                           use:['style-loader','css-loader','sass-loader']
 
-                      }
+                      },
+                      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
                     ]
                   }
     :
@@ -126,7 +128,8 @@ var buildModule = PRODUCTION || TEST
                           test: /\.scss$/,
                           use:['style-loader','css-loader','sass-loader']
 
-                      }
+                      },
+                      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
                     ]
                   }
 module.exports =  {
