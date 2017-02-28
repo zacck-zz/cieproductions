@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import router from 'src/router/'
+
 
 //load hot module on development
 if(process.env.NODE_ENV === 'development') {
@@ -13,6 +15,6 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 ReactDOM.render(
-  <div>Hello CIE!</div>,
+  <div>{router}</div>,
   document.getElementById('app')
 );

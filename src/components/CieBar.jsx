@@ -6,3 +6,5 @@ export class CieBar extends Component {
     return(<p>CIE BAR</p>)
   }
 };
+
+export default CieBar;

@@ -119,6 +119,16 @@ module.exports =  {
     filename: PRODUCTION ? '[name].[hash:12].min.js' : '[name].bundle.js',
     path:__dirname + '/public'
   },
+  resolve: {
+    modules:[
+      'node_modules',
+      './src/components'
+    ],
+    alias: {
+      src: path.resolve(__dirname, 'src/')
+    },
+    extensions: [' ','.js','.jsx']
+  },
   module: buildModule,
   devServer: {
     contentBase: './public',

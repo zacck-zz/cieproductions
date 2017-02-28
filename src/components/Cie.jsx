@@ -7,9 +7,9 @@ export class Cie extends Component {
     return(
       <div>
         <CieBar/>
-        {this.props.children }
+        {this.props.children}
       </div>
-    )
+    );
   }
 };
 
