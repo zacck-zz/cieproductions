@@ -38,7 +38,6 @@ var entry = PRODUCTION
                 'react-router',
                 'css-loader',
                 'sass-loader',
-                'node-sass',
                 'script-loader',
                 'react-tap-event-plugin',
                 'style-loader',
