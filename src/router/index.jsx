@@ -21,6 +21,30 @@ export default (
           .catch(errorLoading);
         }}
       />
+    <Route
+      path="about"
+      getComponent={(location, cb) => {
+        System.import('About')
+        .then(loadRoute(cb))
+        .catch(errorLoading)
+      }}
+      />
+    <Route
+      path="contact"
+      getComponent={(location, cb) => {
+        System.import('Contact')
+        .then(loadRoute(cb))
+        .catch(errorLoading)
+      }}
+      />
+      <Route
+        path="change"
+        getComponent={(location, cb) => {
+          System.import('Change')
+          .then(loadRoute(cb))
+          .catch(errorLoading)
+        }}
+        />
     </Route>
   </Router>
 );

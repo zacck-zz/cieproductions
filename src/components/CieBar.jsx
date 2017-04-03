@@ -1,10 +1,11 @@
 import React,{Component} from 'react'
 import AppBar from 'material-ui/AppBar'
 import MenuItem from 'material-ui/MenuItem'
-import IconMenu from 'material-ui/IconMenu';
-import IconButton from 'material-ui/IconButton';
-import Menu from 'material-ui/svg-icons/navigation/menu';
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import IconMenu from 'material-ui/IconMenu'
+import IconButton from 'material-ui/IconButton'
+import Menu from 'material-ui/svg-icons/navigation/menu'
+import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
+import {hashHistory} from 'react-router'
 
 
 
@@ -34,10 +35,27 @@ export class CieBar extends Component {
                       targetOrigin={{horizontal: 'right', vertical: 'top'}}
                       anchorOrigin={{horizontal: 'right', vertical: 'top'}}
                     >
-                    <MenuItem primaryText="CIEPROD" />
-                    <MenuItem primaryText="WE ARE" />
-                    <MenuItem primaryText="SOCIAL CHANGE" />
-                    <MenuItem primaryText="AWEH" />
+                    <MenuItem
+                      primaryText="CIEPROD"
+                      onTouchTap={() => {
+                        hashHistory.push('/')
+                      }}/>
+                    <MenuItem
+                      primaryText="WE ARE"
+                      onTouchTap={() => {
+                        hashHistory.push('/change')
+                      }}/>
+                    <MenuItem
+                      primaryText="SOCIAL CHANGE"
+                      onTouchTap={() => {
+                        hashHistory.push('/change')
+                      }}/>
+                    <MenuItem
+                      primaryText="AWEH"
+                      onTouchTap={() => {
+                        hashHistory.push('/contact')
+                      }}
+                      />
                   </IconMenu>}
 
       />
