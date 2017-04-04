@@ -43,7 +43,7 @@ export class CieBar extends Component {
                     <MenuItem
                       primaryText="WE ARE"
                       onTouchTap={() => {
-                        hashHistory.push('/change')
+                        hashHistory.push('/about')
                       }}/>
                     <MenuItem
                       primaryText="SOCIAL CHANGE"

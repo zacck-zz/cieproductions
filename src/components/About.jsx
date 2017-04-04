@@ -6,6 +6,8 @@ class About extends Component {
       <div className="about-page">
         <div className="top-section">
           <p className="text-center we-are">WE ARE VISUAL STORIES</p>
+          <p className="about-story text-center">We are passionate about immersive cinematic narratives and firmly believe
+            that Virtual Reality will strengthen the power of good stories</p>
         </div>
         <div className="pimages text-center">
           <div className="blkbg columns large-3 medium -3 small-6">
@@ -21,8 +23,8 @@ class About extends Component {
             <img className="profile-pic" src={require('../assets/maishe.png')}></img>
           </div>
         </div>
-        <div className="blkbg">
-
+        <div className="blkbg text-center">
+          <img className="about-logo" src={require('../assets/color_logo.png')}></img>
         </div>
       </div>
     )
