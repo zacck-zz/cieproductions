@@ -29,7 +29,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 injectTapEventPlugin();
 const cieTheme = getMuiTheme({
   palette: {
-    primary1Color: "#f9d57e",
+    primary1Color: "#000000",
   },
   appBar: {
     height: 50,
