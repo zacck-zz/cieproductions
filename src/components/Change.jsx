@@ -8,8 +8,9 @@ class Change extends Component {
           <p className="text-center change-header">WE SUPPORT SOCIAL CHANGE</p>
         </div>
         <div className="text-center change-message">
-          <p>We believe that we can change the world by bringing people who are passionate
-             about changing it together</p>
+          <div>We believe that we can change the world by bringing </div>
+          <div>people who are passionate about changing it </div>
+          <div>together.</div>
         </div>
       </div>
     );

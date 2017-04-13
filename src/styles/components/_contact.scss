@@ -5,15 +5,24 @@
 }
 .aweeh {
   font-size: 2.4rem;
-  font-weight: bolder;
-  padding-top: 8rem;
+  font-weight: 900;
+  padding-top: 10rem;
   letter-spacing:.02rem;
 }
 .beige {
   color: $beige;
   font-size: 1.8rem;
+  letter-spacing:.04rem;
 }
-
+.blkbg {
+  margin-top: 2rem;
+}
+.padd {
+  margin-top: 4rem;
+}
+.light {
+  font-weight: 100;
+}
 .heavy {
-  font-weight: bold;
+  font-weight: 400;
 }

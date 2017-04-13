@@ -8,12 +8,13 @@
   margin-top: .5rem;
 }
 .about-logo {
-  margin-top: 5rem;
+  margin-top: 8rem;
   height: 15rem;
   width: 15rem;
 }
 .pimages {
   background-color: #000000;
+  margin-top: 11rem;
 }
 .top-section  {
   height: 28rem;
@@ -21,14 +22,25 @@
   background-size: cover;
 }
 .we-are{
-  font-weight: bolder;
+  font-weight: 900;
   font-size: 2.4rem;
   letter-spacing:.02rem;
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .blkbg {
   background-color: #000000;
+  display: inline-block;
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
 }
 .about-story {
   color: $beige;
+  margin-top: 19rem;
+  font-weight: 600;
+}
+.thin-names {
+  color: $beige;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 1rem;
 }

@@ -6,6 +6,7 @@ import IconButton from 'material-ui/IconButton'
 import Menu from 'material-ui/svg-icons/navigation/menu'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 import {hashHistory} from 'react-router'
+import Home from 'material-ui/svg-icons/action/home'
 
 
 
@@ -21,9 +22,10 @@ const styles = {
   },
   item : {
     color: '#f9d57e',
-    fontWeight:'bolder',
+    fontWeight: '900',
     cursor: 'pointer'
   }
+
 }
 
 
@@ -35,7 +37,7 @@ export class CieBar extends Component {
         iconElementLeft={<img style={styles.logo} src={require('../assets/bar_logo_color.png')}/>}
       >
       <MenuItem
-        primaryText="CIEPROD"
+        primaryText="HOME"
         style={styles.item}
         onTouchTap={() => {
           hashHistory.push('/')

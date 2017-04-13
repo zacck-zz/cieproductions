@@ -8,22 +8,22 @@ export class CieFooter extends Component {
           <img className="about-logo" src={require('../assets/medium_footer_logo.png')}></img>
           <div className="social-box">
             <div className="social-child">
-              <img  src={require('../assets/social/linkedin.png')}></img>
+              <img className="social-logo" src={require('../assets/social/linkedin.png')}></img>
             </div>
             <div  className="social-child">
-              <img  src={require('../assets/social/facebook.png')}></img>
+              <img className="social-logo" src={require('../assets/social/facebook.png')}></img>
             </div>
             <div  className="social-child">
-              <img  src={require('../assets/social/vimeo.png')}></img>
+              <img className="social-logo" src={require('../assets/social/vimeo.png')}></img>
             </div>
             <div  className="social-child">
-              <img  src={require('../assets/social/twitter.png')}></img>
+              <img className="social-logo" src={require('../assets/social/twitter.png')}></img>
             </div>
             <div  className="social-child">
-              <img  src={require('../assets/social/youtube.png')}></img>
+              <img className="social-logo" src={require('../assets/social/youtube.png')}></img>
             </div>
             <div  className="social-child">
-              <img  src={require('../assets/social/instagram.png')}></img>
+              <img className="social-logo" src={require('../assets/social/instagram.png')}></img>
             </div>
           </div>
         </div>
