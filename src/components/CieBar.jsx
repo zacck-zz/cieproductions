@@ -18,6 +18,11 @@ const styles = {
   },
   menu: {
     color: '#000000',
+  },
+  item : {
+    color: '#f9d57e',
+    fontWeight:'bolder',
+    cursor: 'pointer'
   }
 }
 
@@ -28,37 +33,33 @@ export class CieBar extends Component {
     return(
       <AppBar
         iconElementLeft={<img style={styles.logo} src={require('../assets/bar_logo_color.png')}/>}
-        iconElementRight = {<IconMenu
-                      iconButtonElement= {
-                          <IconButton style={styles.menu}><MoreVertIcon style={styles.menu}/></IconButton>
-                      }
-                      targetOrigin={{horizontal: 'right', vertical: 'top'}}
-                      anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-                    >
-                    <MenuItem
-                      primaryText="CIEPROD"
-                      onTouchTap={() => {
-                        hashHistory.push('/')
-                      }}/>
-                    <MenuItem
-                      primaryText="WE ARE"
-                      onTouchTap={() => {
-                        hashHistory.push('/about')
-                      }}/>
-                    <MenuItem
-                      primaryText="SOCIAL CHANGE"
-                      onTouchTap={() => {
-                        hashHistory.push('/change')
-                      }}/>
-                    <MenuItem
-                      primaryText="AWEH"
-                      onTouchTap={() => {
-                        hashHistory.push('/contact')
-                      }}
-                      />
-                  </IconMenu>}
-
-      />
+      >
+      <MenuItem
+        primaryText="CIEPROD"
+        style={styles.item}
+        onTouchTap={() => {
+          hashHistory.push('/')
+        }}/>
+      <MenuItem
+        primaryText="WE ARE"
+        style={styles.item}
+        onTouchTap={() => {
+          hashHistory.push('/about')
+        }}/>
+      <MenuItem
+        primaryText="SOCIAL CHANGE"
+        style={styles.item}
+        onTouchTap={() => {
+          hashHistory.push('/change')
+        }}/>
+      <MenuItem
+        primaryText="AWEH"
+        style={styles.item}
+        onTouchTap={() => {
+          hashHistory.push('/contact')
+        }}
+        />
+      </AppBar>
     )
   }
 };
