@@ -140,7 +140,7 @@ var buildModule = PRODUCTION || TEST
                           use:['style-loader','css-loader','sass-loader']
 
                       },
-                      { test: /\.(png|jpg)$/, loader: 'url-loader?name=/img/[name].[ext]&&limit=8192' },
+                      { test: /\.(png|jpg)$/, loader: 'url-loader?name=/img/[name].[ext]' },
                       {test:  /\.json$/, use:'json-loader'}
                     ]
                   }
@@ -150,7 +150,7 @@ module.exports =  {
   entry: entry,
   plugins: plugins,
   output: {
-    publicPath: PRODUCTION ? '/public' : '/',
+    publicPath: '/public',
     filename: PRODUCTION ? '[name].[hash:12].min.js' : '[name].bundle.js',
     path:__dirname + '/public'
   },
