@@ -1,15 +1,20 @@
 .l-page {
   background-color: rgba(0,0,0, 0.7);
   .carla-quote {
-    font-weight: bold;
-    letter-spacing: .05rem;
+    font-weight: 800;
+    letter-spacing: .08rem;
     color: $beige;
   }
   .quote-name {
     letter-spacing: .05rem;
+    font-weight: lighter;
     color: $beige;
   }
   .color-logo {
     height: 36rem;
+  }
+  .quote-box {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
   }
 }
