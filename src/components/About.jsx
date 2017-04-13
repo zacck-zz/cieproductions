@@ -23,9 +23,6 @@ class About extends Component {
             <img className="profile-pic" src={require('../assets/maishe.png')}></img>
           </div>
         </div>
-        <div className="blkbg text-center">
-          <img className="about-logo" src={require('../assets/color_logo.png')}></img>
-        </div>
       </div>
     )
   };

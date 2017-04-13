@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import CieBar from 'CieBar'
+import CieFooter from 'CieFooter'
 
 
 export class Cie extends Component {
@@ -8,6 +9,7 @@ export class Cie extends Component {
       <div>
         <CieBar/>
         {this.props.children}
+        <CieFooter/>
       </div>
     );
   }

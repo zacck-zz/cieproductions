@@ -5,7 +5,7 @@ class Change extends Component {
     return(
       <div>
         <div className="social-top">
-          <p className="text-center">WE SUPPORT SOCIAL CHANGE</p>
+          <p className="text-center change-">WE SUPPORT SOCIAL CHANGE</p>
         </div>
         <div className="text-center change-message">
           <p>We believe that we can change the world by bringing people who are passionate

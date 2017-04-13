@@ -27,7 +27,7 @@ export class CieBar extends Component {
   render() {
     return(
       <AppBar
-        iconElementLeft={<img style={styles.logo} src={require('../assets/bar_logo.png')}/>}
+        iconElementLeft={<img style={styles.logo} src={require('../assets/bar_logo_color.png')}/>}
         iconElementRight = {<IconMenu
                       iconButtonElement= {
                           <IconButton style={styles.menu}><MoreVertIcon style={styles.menu}/></IconButton>

@@ -14,9 +14,6 @@ class Contact extends Component {
           <p className="beige">awehboet@cieproductions.co.za</p>
           <p className="beige">0842433874</p>
         </div>
-        <div className="blkbg text-center">
-          <img className="about-logo" src={require('../assets/color_logo.png')}></img>
-        </div>
       </div>
     );
   }
