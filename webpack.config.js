@@ -152,7 +152,7 @@ module.exports =  {
   entry: entry,
   plugins: plugins,
   output: {
-    publicPath: '/public',
+    publicPath: '/public/',
     filename: PRODUCTION ? '[name].[hash:12].min.js' : '[name].bundle.js',
     path:__dirname + '/public'
   },
