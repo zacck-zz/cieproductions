@@ -3,3 +3,5 @@ public/*.js
 public/*.map
 public/*.png
 public/*.html
+public/*.gz
+public/appcache

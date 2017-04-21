@@ -12,17 +12,6 @@ var PRODUCTION = process.env.NODE_ENV === 'production';
 var DEVELOPMENT = process.env.NODE_ENV === 'development';
 var TEST = process.env.NODE_ENV = 'test';
 
-// // set enviroment
-// try{
-//   if(DEVELOPMENT || TEST) {
-//       envFile(path.join(__dirname, 'config/'+process.env.NODE_ENV + '.env'));
-//   } else {
-//     console.log('on server no need for env file')
-//   }
-// } catch(e) {
-//   console.log(e);
-// }
-
 
 //separate production and dev entries
 var entry = PRODUCTION
