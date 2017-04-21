@@ -1,5 +1,12 @@
 import React, {Component} from 'react'
+import * as VrView from '../../lib/vrview/build/vrview.js'
 export class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+  }
+  componentDidMount() {
+
+  }
   render() {
     return(
       <div className="l-page">
