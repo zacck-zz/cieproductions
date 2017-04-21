@@ -46,6 +46,8 @@
     "sass-loader": "3.1.2",
     "script-loader": "^0.7.0",
     "style-loader": "^0.13.2",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2#harmony",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "url-loader": "^0.5.8",
     "vrview": "^0.2.0",
     "webpack": "^2.2.1"
