@@ -17,12 +17,16 @@ app.use(function (req, res, next){
   }
 });
 
-//max age of cache and enable compression
-var oneYear = 1 * 365 * 24 * 60 * 60 * 1000;
+var oneYear = 1 * 60 * 1000;
 app.use(compression());
 //show app folder to serve
-app.use(express.static(__dirname +'/public/')); // specifies a a folder name to expose
+app.use(express.static(__dirname + '/public/', {maxAge:oneYear})); // specifies a a folder name to expose
 
+// handle every other route with index.html, which will contain
+// a script tag to your application's JavaScript file(s).
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+})
 
 //start the server
 app.listen(PORT, function(){ // takes the port you are serving to and a function
