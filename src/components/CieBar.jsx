@@ -22,7 +22,7 @@ const styles = {
   },
   item : {
     color: '#f9d57e',
-    fontWeight: '900',
+    fontWeight: '500',
     cursor: 'pointer'
   }
 
