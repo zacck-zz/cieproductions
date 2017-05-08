@@ -4,7 +4,6 @@ var webpack = require('webpack');
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
 var OfflinePlugin = require('offline-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 
 //define enviroments
@@ -44,7 +43,7 @@ var entry = PRODUCTION
 var plugins = PRODUCTION
     ?   [
           new webpack.optimize.CommonsChunkPlugin({name:'vendor', filename: 'vendor.[hash:12].min.js'}),
-          new UglifyJSPlugin(),
+          new webpack.optimize.UglifyJsPlugin(),
           new CompressionPlugin({
             asset: "[path].gz[query]",
             algorithm: "gzip",
@@ -52,7 +51,6 @@ var plugins = PRODUCTION
             threshold: 10240,
             minRatio: 0.8
           }),
-          new HTMLWebpackPlugin({
             template: 'index-template.html'
           }),
           new OfflinePlugin(
