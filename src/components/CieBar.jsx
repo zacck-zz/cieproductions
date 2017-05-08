@@ -23,7 +23,8 @@ const styles = {
   item : {
     color: '#f9d57e',
     fontWeight: '500',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    fontSize: '1rem'
   }
 
 }
@@ -34,14 +35,11 @@ export class CieBar extends Component {
   render() {
     return(
       <AppBar
-        iconElementLeft={<img style={styles.logo} src={require('../assets/bar_logo_color.png')}/>}
-      >
-      <MenuItem
-        primaryText="HOME"
-        style={styles.item}
+        iconElementLeft={<img style={styles.logo}
         onTouchTap={() => {
-          hashHistory.push('/')
-        }}/>
+            hashHistory.push('/')
+          }} src={require('../assets/bar_logo_color.png')}/>}
+      >
       <MenuItem
         primaryText="WE ARE"
         style={styles.item}

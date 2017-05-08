@@ -8,7 +8,7 @@ class Contact extends Component {
         <div className="top-contact">
           <p className="aweeh text-center">AWEH BOET</p>
         </div>
-        <div className="text-center">
+        <div className="text-center arb-styl">
           <div className="beige heavy">Keen to have a chat or have some questions?</div>
           <div className="beige heavy">We are always happy to meet up and share stories</div>
           <div className="beige padd light">awehboet@cieproductions.co.za</div>
