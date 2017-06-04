@@ -17,9 +17,7 @@ app.use(function (req, res, next){
   }
 });
 
-app.get('/.well-known/acme-challenge/:content', function(req, res) {
- res.send('bsr_fmR4Q-zn1_msMImGsDD_TLrF5vvVJ7-TcDEpiWk.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8');
-});
+
 
 var oneYear = 1 * 60 * 1000;
 app.use(compression());
