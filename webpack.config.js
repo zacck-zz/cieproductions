@@ -43,7 +43,6 @@ var entry = PRODUCTION
 var plugins = PRODUCTION
     ?   [
           new webpack.optimize.CommonsChunkPlugin({name:'vendor', filename: 'vendor.[hash:12].min.js'}),
-          new webpack.optimize.UglifyJsPlugin(),
           new CompressionPlugin({
             asset: "[path].gz[query]",
             algorithm: "gzip",
