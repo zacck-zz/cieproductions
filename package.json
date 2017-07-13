@@ -4,7 +4,7 @@
   "description": "Carla's fancy website",
   "main": "index.js",
   "engines": {
-    "node": "6.2.0",
+    "node": "7.10.1",
     "npm": "3.8.9"
   },
   "scripts": {
