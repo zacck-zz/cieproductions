@@ -1,7 +1,6 @@
 //load module
 var express = require('express');
 var path = require('path');
-var compression = require('compression');
 
 //create our app
 var app = express();
@@ -19,10 +18,8 @@ app.use(function (req, res, next){
 */
 
 
-var oneYear = 1 * 60 * 1000;
-app.use(compression());
 //show app folder to serve
-app.use(express.static(__dirname + '/public/', {maxAge:oneYear})); // specifies a a folder name to expose
+app.use(express.static(__dirname + '/public/'))// specifies a a folder name to expose
 
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
