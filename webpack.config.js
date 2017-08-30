@@ -22,7 +22,6 @@ var entry = PRODUCTION
                 'script-loader!foundation-sites/dist/foundation.min.js',
                 'react',
                 'react-dom',
-                'firebase',
                 'redux',
                 'react-redux',
                 'react-router',
