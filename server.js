@@ -7,7 +7,7 @@ var compression = require('compression');
 var app = express();
 const PORT = process.env.PORT || 3000;
 
-//HTTPS TO HTTP
+/*HTTPS TO HTTP
 app.use(function (req, res, next){
   //if over http
   if(req.headers['x-forwarded-proto'] ===  'http') {
@@ -16,7 +16,7 @@ app.use(function (req, res, next){
     next();
   }
 });
-
+*/
 
 
 var oneYear = 1 * 60 * 1000;
@@ -29,6 +29,11 @@ app.use(express.static(__dirname + '/public/', {maxAge:oneYear})); // specifies 
 app.get('*', function (request, response){
   response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
+
+app.get('/.well-known/acme-challenge/:content', function(req, res) {
+	res.send('BDGe8pXLUzkV5Xb7EbWaC4sh3Kw9a3ZAlDHTLLQjAxw.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8')
+})
+
 
 //start the server
 app.listen(PORT, function(){ // takes the port you are serving to and a function
