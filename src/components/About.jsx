@@ -26,8 +26,8 @@ class About extends Component {
             <div className="thin-names">{`Aphelele Mantshiyose`}</div>
           </div>
           <div className="blkbg">
-            <img className="profile-pic" src={require('../assets/maishe.png')}></img>
-            <div className="thin-names">{`Maishe Mosala`}</div>
+            <img className="profile-pic" src={require('../assets/zacck.jpg')}></img>
+            <div className="thin-names">{`Zacck Osiemo`}</div>
           </div>
         </div>
       </div>

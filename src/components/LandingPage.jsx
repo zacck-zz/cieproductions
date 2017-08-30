@@ -10,16 +10,6 @@ export class LandingPage extends Component {
   render() {
     return(
       <div className="l-page">
-        <div>
-          <a-scene>
-              <a-assets>
-                <video id="video" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
-                       autoplay loop crossorigin></video>
-              </a-assets>
-
-              <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
-          </a-scene>
-        </div>
         <div className="text-center">
           <img className="color-logo" src={require('../assets/color_logo.png')}></img>
         </div>
